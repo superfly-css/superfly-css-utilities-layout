@@ -1,5 +1,6 @@
 /*! superfly-css-utilities-layout | MIT License | https://github.com/superfly-css/superfly-css-utilities-layout/blob/master/LICENSE.md */
 
+@import "superfly-css-variables-dimension";
 @import "./flex.css";
 @import "./sm-flex.css";
 @import "./md-flex.css";
@@ -25,6 +26,6 @@
 
 .u-sticky-header {
     @apply --position-fixed;
-    z-index: 1000;
+    z-index: var(--zindex-sticky);
     top: 0px;
 }

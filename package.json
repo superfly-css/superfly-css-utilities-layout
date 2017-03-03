@@ -28,6 +28,6 @@
     "superfly-css-task-build": "^0.1.8"
   },
   "dependencies": {
-    "superfly-css-variables-dimension": "0.0.1"
+    "superfly-css-variables-dimension": "0.1.0"
   }
 }
