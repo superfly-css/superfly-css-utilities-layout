@@ -1,0 +1,30 @@
+/*! superfly-css-utilities-layout | MIT License | https://github.com/superfly-css/superfly-css-utilities-layout/blob/master/LICENSE.md */
+
+@import "./flex.css";
+@import "./sm-flex.css";
+@import "./md-flex.css";
+@import "./lg-flex.css";
+
+:root {
+  --position-fixed: {
+    position: fixed;
+  };
+  --position-absolute: {
+    position: absolute;
+  }
+}
+
+.u-full-screen {
+  @apply --position-absolute;
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: auto !important;
+}
+
+.u-sticky-header {
+    @apply --position-fixed;
+    z-index: 1000;
+    top: 0px;
+}

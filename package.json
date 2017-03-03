@@ -1,0 +1,33 @@
+{
+  "name": "superfly-css-utilities-layout",
+  "version": "0.0.0",
+  "description": "Layout utilities",
+  "main": "src/main/css/index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superfly-css/superfly-css-utilities-layout.git"
+  },
+  "keywords": [
+    "superfly-css",
+    "layout",
+    "css",
+    "utilities",
+    "flexbox"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superfly-css/superfly-css-utilities-layout/issues"
+  },
+  "homepage": "https://github.com/superfly-css/superfly-css-utilities-layout#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "superfly-css-task-build": "^0.1.8"
+  },
+  "dependencies": {
+    "superfly-css-variables-dimension": "0.0.1"
+  }
+}
