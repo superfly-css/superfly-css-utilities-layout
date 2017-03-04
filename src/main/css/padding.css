@@ -1,0 +1,15 @@
+@import "superfly-css-variables-dimension";
+
+@each $dimension in left, right, top, bottom {
+    @each $factor in half, 1, 2, 3, 4, 5 {
+        .u-padding-$(dimension)-$(factor)x {
+            padding-$(dimension): var(--spacer-$(factor)x) !important;
+        }
+    }
+}
+
+@each $factor in half, 1, 2, 3, 4, 5 {
+    .u-padding-$(factor)x {
+        padding: var(--spacer-$(factor)x) !important;
+    }
+}

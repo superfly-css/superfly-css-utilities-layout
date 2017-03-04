@@ -5,6 +5,7 @@
 @import "./sm-flex.css";
 @import "./md-flex.css";
 @import "./lg-flex.css";
+@import "./padding.css";
 
 :root {
   --position-fixed: {
