@@ -1,0 +1,19 @@
+.u-height-halfx {
+    height: 0.5rem !important;
+}
+
+@for $factor from 1 to 50 {
+    .u-height-$(factor)x {
+        height: $(factor)rem !important;
+    }
+}
+
+.u-width-halfx {
+    width: 0.5rem !important;
+}
+
+@for $factor from 1 to 50 {
+    .u-width-$(factor)x {
+        width: $(factor)rem !important;
+    }
+}

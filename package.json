@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-utilities-layout",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Layout utilities",
   "main": "src/main/css/index.css",
   "scripts": {
@@ -25,9 +25,9 @@
   "homepage": "https://github.com/superfly-css/superfly-css-utilities-layout#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "superfly-css-task-build": "^0.1.8"
+    "superfly-css-task-build": "^0.1.9"
   },
   "dependencies": {
-    "superfly-css-variables-dimension": "0.1.0"
+    "superfly-css-variables-dimension": "0.1.3"
   }
 }
