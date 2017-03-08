@@ -1,23 +1,23 @@
 @each $dimension in left, right, top, bottom {
-      .u-margin-$(dimension)-halfrem {
+      .u-margin-$(dimension)-halfx {
           margin-$(dimension): 0.5rem !important;
       }
 }
 
 @each $dimension in left, right, top, bottom {
     @for $factor from 1 to 20 {
-        .u-margin-$(dimension)-$(factor)rem {
+        .u-margin-$(dimension)-$(factor)x {
             margin-$(dimension): $(factor)rem !important;
         }
     }
 }
 
-.u-margin-halfrem {
+.u-margin-halfx {
     margin: 0.5rem !important;
 }
 
 @for $factor from 1 to 20 {
-    .u-margin-$(factor)rem {
+    .u-margin-$(factor)x {
         margin: $(factor)rem !important;
     }
 }

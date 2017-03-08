@@ -1,9 +1,9 @@
-.u-height-halfrem {
+.u-height-halfx {
     height: 0.5rem !important;
 }
 
 @for $factor from 1 to 50 {
-    .u-height-$(factor)rem {
+    .u-height-$(factor)x {
         height: $(factor)rem !important;
     }
 }
@@ -12,12 +12,12 @@
   height: 100%;
 }
 
-.u-width-halfrem {
+.u-width-halfx {
     width: 0.5rem !important;
 }
 
 @for $factor from 1 to 50 {
-    .u-width-$(factor)rem {
+    .u-width-$(factor)x {
         width: $(factor)rem !important;
     }
 }

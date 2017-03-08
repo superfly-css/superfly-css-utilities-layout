@@ -1,23 +1,23 @@
 @each $dimension in left, right, top, bottom {
-      .u-padding-$(dimension)-halfrem {
+      .u-padding-$(dimension)-halfx {
           padding-$(dimension): 0.5rem !important;
       }
 }
 
 @each $dimension in left, right, top, bottom {
     @for $factor from 1 to 20 {
-        .u-padding-$(dimension)-$(factor)rem {
+        .u-padding-$(dimension)-$(factor)x {
             padding-$(dimension): $(factor)rem !important;
         }
     }
 }
 
-.u-padding-halfrem {
+.u-padding-halfx {
     padding: 0.5rem !important;
 }
 
 @for $factor from 1 to 20 {
-    .u-padding-$(factor)rem {
+    .u-padding-$(factor)x {
         padding: $(factor)rem !important;
     }
 }
