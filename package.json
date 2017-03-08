@@ -1,6 +1,6 @@
 {
   "name": "superfly-css-utilities-layout",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Layout utilities",
   "main": "src/main/css/index.css",
   "scripts": {
