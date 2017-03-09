@@ -8,6 +8,8 @@
 @import "./padding.css";
 @import "./margins.css";
 @import "./height-width.css";
+@import "./zindex.css";
+@import "./postion.css";
 
 :root {
   --position-fixed: {
