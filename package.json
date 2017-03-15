@@ -1,10 +1,13 @@
 {
   "name": "superfly-css-utilities-layout",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Layout utilities",
   "main": "src/main/css/index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "update": "ncu -a && npm i",
+    "build": "gulp clean && gulp build:css",
+    "test": "gulp clean && gulp build:css && gulp test:css",
+    "clean": "gulp clean"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,8 @@
     "superfly-css-task-build": "^0.1.9"
   },
   "dependencies": {
+    "superfly-css-task-clean": "0.0.1",
+    "superfly-css-task-test": "^0.3.0",
     "superfly-css-variables-dimension": "0.1.3"
   }
 }
