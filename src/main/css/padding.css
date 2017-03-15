@@ -4,6 +4,14 @@
       }
 }
 
+:root {
+  @each $dimension in left, right, top, bottom {
+        --u-padding-$(dimension)-halfx {
+            padding-$(dimension): 0.5rem !important;
+        }
+  }
+}
+
 @each $dimension in left, right, top, bottom {
     @for $factor from 1 to 20 {
         .u-padding-$(dimension)-$(factor)x {
@@ -12,12 +20,36 @@
     }
 }
 
+:root {
+    @each $dimension in left, right, top, bottom {
+        @for $factor from 1 to 20 {
+            --u-padding-$(dimension)-$(factor)x {
+                padding-$(dimension): $(factor)rem !important;
+            }
+        }
+    }
+}
+
 .u-padding-halfx {
     padding: 0.5rem !important;
+}
+
+:root {
+  --u-padding-halfx {
+      padding: 0.5rem !important;
+  }
 }
 
 @for $factor from 1 to 20 {
     .u-padding-$(factor)x {
         padding: $(factor)rem !important;
     }
+}
+
+:root {
+  @for $factor from 1 to 20 {
+      --u-padding-$(factor)x {
+          padding: $(factor)rem !important;
+      }
+  }
 }

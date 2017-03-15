@@ -4,3 +4,11 @@
         z-index: var(--$(type)) !important;
     }
 }
+
+:root {
+    @each $type in zindex-dropdown-backdrop, zindex-navbar, zindex-dropdown, zindex-fixed, zindex-modal-backdrop, zindex-modal, zindex-popover, zindex-tooltip {
+        --u-$(type) {
+            z-index: var(--$(type)) !important;
+        }
+    }
+}
