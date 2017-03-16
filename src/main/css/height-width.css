@@ -1,27 +1,65 @@
+:root {
+  --u-height-halfx {
+      height: 0.5rem !important;
+  }
+}
+
 .u-height-halfx {
-    height: 0.5rem !important;
+    @apply(--u-height-halfx);
+}
+
+:root {
+  @for $factor from 1 to 50 {
+      --u-height-$(factor)x {
+          height: $(factor)rem !important;
+      }
+  }
 }
 
 @for $factor from 1 to 50 {
     .u-height-$(factor)x {
-        height: $(factor)rem !important;
+        @apply(--u-height-$(factor)x);
     }
+}
+
+:root {
+  --u-height-100 {
+    height: 100% !important;
+  }
 }
 
 .u-height-100 {
-  height: 100%;
+  @apply(--u-height-100);
 }
 
+:root {
+  --u-width-halfx {
+      width: 0.5rem !important;
+  }
+}
 .u-width-halfx {
-    width: 0.5rem !important;
+    @apply(--u-width-halfx);
 }
 
+:root {
+  @for $factor from 1 to 50 {
+      --u-width-$(factor)x {
+          width: $(factor)rem !important;
+      }
+  }
+}
 @for $factor from 1 to 50 {
     .u-width-$(factor)x {
-        width: $(factor)rem !important;
+        @apply(--u-width-$(factor)x);
     }
 }
 
+:root {
+  --u-width-100 {
+    width: 100% !important;
+  }
+}
+
 .u-width-100 {
-  width: 100%;
+  @apply(--u-width-100);
 }
