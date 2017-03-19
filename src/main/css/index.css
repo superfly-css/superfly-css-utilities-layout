@@ -10,6 +10,7 @@
 @import "./height-width.css";
 @import "./zindex.css";
 @import "./position.css";
+@import "./borders.css";
 
 :root {
   --position-fixed: {
