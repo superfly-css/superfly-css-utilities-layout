@@ -13,7 +13,7 @@
 }
 
 @each $dimension in left, right, top, bottom {
-    @for $factor from 1 to 20 {
+    @for $factor from 0 to 20 {
         .u-margin-$(dimension)-$(factor)x {
             margin-$(dimension): $(factor)rem !important;
         }
@@ -22,7 +22,7 @@
 
 :root {
     @each $dimension in left, right, top, bottom {
-        @for $factor from 1 to 20 {
+        @for $factor from 0 to 20 {
             --u-margin-$(dimension)-$(factor)x {
                 margin-$(dimension): $(factor)rem !important;
             }
@@ -42,14 +42,14 @@
 }
 
 
-@for $factor from 1 to 20 {
+@for $factor from 0 to 20 {
     .u-margin-$(factor)x {
         margin: $(factor)rem !important;
     }
 }
 
 :root {
-    @for $factor from 1 to 20 {
+    @for $factor from 0 to 20 {
         --u-margin-$(factor)x {
             margin: $(factor)rem !important;
         }

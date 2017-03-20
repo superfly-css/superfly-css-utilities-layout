@@ -1,26 +1,26 @@
 :root {
-  @for $factor from 1 to 20 {
+  @for $factor from 0 to 20 {
       --u-border-width-$(factor)x {
           border-width: $(factor)px !important;
       }
   }
 }
 
-@for $factor from 1 to 20 {
+@for $factor from 0 to 20 {
     .u-border-width-$(factor)x {
         @apply(--u-border-width-$(factor)x);
     }
 }
 
 :root {
-  @for $factor from 1 to 20 {
+  @for $factor from 0 to 20 {
       --u-border-radius-$(factor)x {
           border-radius: $(factor)px !important;
       }
   }
 }
 
-@for $factor from 1 to 20 {
+@for $factor from 0 to 20 {
     .u-border-radius-$(factor)x {
         @apply(--u-border-radius-$(factor)x);
     }
@@ -29,7 +29,7 @@
 
 :root {
     @each $dimension in top, bottom, left, right {
-        @for $factor from 1 to 20 {
+        @for $factor from 0 to 20 {
             --u-border-$(dimension)-width-$(factor)x {
                 border-$(dimension)-width: $(factor)px !important;
             }
@@ -38,7 +38,7 @@
 }
 
 @each $dimension in top, bottom, left, right {
-    @for $factor from 1 to 20 {
+    @for $factor from 0 to 20 {
         .u-border-$(dimension)-width-$(factor)x {
             @apply(--u-border-$(dimension)-width-$(factor)x);
         }

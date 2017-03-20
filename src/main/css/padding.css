@@ -13,7 +13,7 @@
 }
 
 @each $dimension in left, right, top, bottom {
-    @for $factor from 1 to 20 {
+    @for $factor from 0 to 20 {
         .u-padding-$(dimension)-$(factor)x {
             padding-$(dimension): $(factor)rem !important;
         }
@@ -22,7 +22,7 @@
 
 :root {
     @each $dimension in left, right, top, bottom {
-        @for $factor from 1 to 20 {
+        @for $factor from 0 to 20 {
             --u-padding-$(dimension)-$(factor)x {
                 padding-$(dimension): $(factor)rem !important;
             }
@@ -40,14 +40,14 @@
   }
 }
 
-@for $factor from 1 to 20 {
+@for $factor from 0 to 20 {
     .u-padding-$(factor)x {
         padding: $(factor)rem !important;
     }
 }
 
 :root {
-  @for $factor from 1 to 20 {
+  @for $factor from 0 to 20 {
       --u-padding-$(factor)x {
           padding: $(factor)rem !important;
       }

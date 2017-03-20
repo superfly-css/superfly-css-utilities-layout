@@ -9,14 +9,14 @@
 }
 
 :root {
-  @for $factor from 1 to 50 {
+  @for $factor from 0 to 50 {
       --u-height-$(factor)x {
           height: $(factor)rem !important;
       }
   }
 }
 
-@for $factor from 1 to 50 {
+@for $factor from 0 to 50 {
     .u-height-$(factor)x {
         @apply(--u-height-$(factor)x);
     }
@@ -42,13 +42,13 @@
 }
 
 :root {
-  @for $factor from 1 to 50 {
+  @for $factor from 0 to 50 {
       --u-width-$(factor)x {
           width: $(factor)rem !important;
       }
   }
 }
-@for $factor from 1 to 50 {
+@for $factor from 0 to 50 {
     .u-width-$(factor)x {
         @apply(--u-width-$(factor)x);
     }

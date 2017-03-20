@@ -35,3 +35,7 @@
     z-index: var(--zindex-sticky);
     top: 0px;
 }
+
+.u-overflow-hidden {
+    overflow: hidden;
+}
