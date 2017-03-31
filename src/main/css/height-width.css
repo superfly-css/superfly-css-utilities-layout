@@ -1,162 +1,148 @@
 :root {
   --u-height-halfx {
-      height: 0.5rem !important;
+      height: 0.5rem;
   }
 }
 
 .u-height-halfx {
-    @apply(--u-height-halfx);
-}
-
-:root {
-  @for $factor from 0 to 50 {
-      --u-height-$(factor)x {
-          height: $(factor)rem !important;
-      }
-  }
+      height: 0.5rem !important;
 }
 
 @for $factor from 0 to 50 {
-    .u-height-$(factor)x {
-        @apply(--u-height-$(factor)x);
+  :root {
+    --u-height-$(factor)x {
+        height: $(factor)rem;
     }
+  }
+  .u-height-$(factor)x {
+      height: $(factor)rem !important;
+  }
 }
 
 :root {
   --u-min-height-halfx {
-      min-height: 0.5rem !important;
+      min-height: 0.5rem;
   }
 }
 
 .u-min-height-halfx {
-    @apply(--u-min-height-halfx);
-}
-
-:root {
-  @for $factor from 0 to 50 {
-      --u-min-height-$(factor)x {
-          min-height: $(factor)rem !important;
-      }
-  }
+    min-height: 0.5rem !important;
 }
 
 @for $factor from 0 to 50 {
-    .u-min-height-$(factor)x {
-        @apply(--u-min-height-$(factor)x);
+  :root {
+    --u-min-height-$(factor)x {
+        min-height: $(factor)rem;
     }
+  }
+  .u-min-height-$(factor)x {
+      min-height: $(factor)rem !important;
+  }
 }
+
 
 :root {
   --u-max-height-halfx {
-      max-height: 0.5rem !important;
+      max-height: 0.5rem;
   }
 }
 
 .u-max-height-halfx {
-    @apply(--u-max-height-halfx);
-}
-
-:root {
-  @for $factor from 0 to 50 {
-      --u-max-height-$(factor)x {
-          max-height: $(factor)rem !important;
-      }
-  }
+    max-height: 0.5rem !important;
 }
 
 @for $factor from 0 to 50 {
-    .u-max-height-$(factor)x {
-        @apply(--u-max-height-$(factor)x);
+  :root {
+    --u-max-height-$(factor)x {
+        max-height: $(factor)rem;
     }
+  }
+  .u-max-height-$(factor)x {
+      max-height: $(factor)rem !important;
+  }
 }
+
 
 :root {
   --u-min-width-halfx {
-      min-width: 0.5rem !important;
+      min-width: 0.5rem;
   }
 }
 
 .u-min-width-halfx {
-    @apply(--u-min-width-halfx);
-}
-
-:root {
-  @for $factor from 0 to 50 {
-      --u-min-width-$(factor)x {
-          min-width: $(factor)rem !important;
-      }
-  }
+      min-width: 0.5rem !important;
 }
 
 @for $factor from 0 to 50 {
-    .u-min-width-$(factor)x {
-        @apply(--u-min-width-$(factor)x);
+  :root {
+    --u-min-width-$(factor)x {
+        min-width: $(factor)rem;
     }
+  }
+  .u-min-width-$(factor)x {
+      min-width: $(factor)rem !important;
+  }
 }
 
 :root {
   --u-max-width-halfx {
-      max-width: 0.5rem !important;
+      max-width: 0.5rem;
   }
 }
 
 .u-max-width-halfx {
-    @apply(--u-max-width-halfx);
+    max-width: 0.5rem !important;
 }
 
 :root {
   @for $factor from 0 to 50 {
+    :root {
       --u-max-width-$(factor)x {
-          max-width: $(factor)rem !important;
+          max-width: $(factor)rem;
       }
+    }
+    .u-max-width-$(factor)x {
+          max-width: $(factor)rem !important;
+    }
   }
 }
 
-@for $factor from 0 to 50 {
-    .u-max-width-$(factor)x {
-        @apply(--u-max-width-$(factor)x);
-    }
-}
-
-
 :root {
   --u-height-100 {
-    height: 100% !important;
+    height: 100%;
   }
 }
 
 .u-height-100 {
-  @apply(--u-height-100);
+    height: 100% !important;
 }
 
 :root {
   --u-width-halfx {
-      width: 0.5rem !important;
+      width: 0.5rem;
   }
 }
 .u-width-halfx {
-    @apply(--u-width-halfx);
+      width: 0.5rem !important;
 }
 
-:root {
-  @for $factor from 0 to 50 {
-      --u-width-$(factor)x {
-          width: $(factor)rem !important;
-      }
-  }
-}
 @for $factor from 0 to 50 {
-    .u-width-$(factor)x {
-        @apply(--u-width-$(factor)x);
+  :root {
+    --u-width-$(factor)x {
+        width: $(factor)rem;
     }
+  }
+  .u-width-$(factor)x {
+        width: $(factor)rem !important;
+  }
 }
 
 :root {
   --u-width-100 {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
 .u-width-100 {
-  @apply(--u-width-100);
+    width: 100% !important;
 }

@@ -1,78 +1,61 @@
-:root {
-  @for $factor from 0 to 20 {
+@for $factor from 0 to 20 {
+    :root {
       --u-border-width-$(factor)x {
-          border-width: $(factor)px !important;
+          border-width: $(factor)px;
       }
-  }
-}
-
-@for $factor from 0 to 20 {
+    }
     .u-border-width-$(factor)x {
-        @apply(--u-border-width-$(factor)x);
+          border-width: $(factor)px !important;
     }
 }
 
-:root {
-  @for $factor from 0 to 20 {
-      --u-border-radius-$(factor)x {
-          border-radius: $(factor)px !important;
-      }
-  }
-}
 
 @for $factor from 0 to 20 {
+  :root {
+    --u-border-radius-$(factor)x {
+          border-radius: $(factor)px;
+      }
+    }
     .u-border-radius-$(factor)x {
-        @apply(--u-border-radius-$(factor)x);
+        border-radius: $(factor)px !important;
     }
 }
 
-
-:root {
-    @each $dimension in top, bottom, left, right {
-        @for $factor from 0 to 20 {
-            --u-border-$(dimension)-width-$(factor)x {
-                border-$(dimension)-width: $(factor)px !important;
-            }
-        }
-    }
-}
 
 @each $dimension in top, bottom, left, right {
     @for $factor from 0 to 20 {
-        .u-border-$(dimension)-width-$(factor)x {
-            @apply(--u-border-$(dimension)-width-$(factor)x);
+      :root {
+        --u-border-$(dimension)-width-$(factor)x {
+            border-$(dimension)-width: $(factor)px;
         }
-    }
+      }
+      .u-border-$(dimension)-width-$(factor)x {
+          border-$(dimension)-width: $(factor)px !important;
+      }
+  }
 }
 
-:root {
-    @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
-        --u-border-style-$(style) {
-            border-style: $(style) !important;
-        }
-    }
-}
 
 @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
-    .u-border-style-$(style) {
-        @apply(--u-border-style-$(style)) !important;
-    }
-}
-
-:root {
-    @each $dimension in top, bottom, left, right {
-        @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
-            --u-border-$(dimension)-style-$(style) {
-                border-$(dimension)-style: $(style) !important;
-            }
+    :root {
+        --u-border-style-$(style) {
+            border-style: $(style);
         }
+    }
+    .u-border-style-$(style) {
+        border-style: $(style) !important;
     }
 }
 
 @each $dimension in top, bottom, left, right {
     @each $style in none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit {
-        .u-border-$(dimension)-style-$(style) {
-            @apply(--u-border-$(dimension)-style-$(style));
-        }
+        :root {
+          --u-border-$(dimension)-style-$(style) {
+            border-$(dimension)-style: $(style);
+      }
     }
+    .u-border-$(dimension)-style-$(style) {
+        border-$(dimension)-style: $(style) !important;
+    }
+  }
 }
