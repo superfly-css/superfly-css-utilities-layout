@@ -11,6 +11,7 @@
 @import "./zindex.css";
 @import "./position.css";
 @import "./borders.css";
+@import "./text.css";
 
 :root {
   --position-fixed: {
