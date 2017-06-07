@@ -1,4 +1,4 @@
-# superfly-css-component-layout
+# superfly-css-utilities-layout
 
 [![Build Status](https://travis-ci.org/superfly-css/superfly-css-utilities-layout.svg?branch=master)](https://travis-ci.org/superfly-css/superfly-css-utilities-layout)
 
